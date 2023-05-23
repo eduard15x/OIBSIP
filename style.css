@@ -33,10 +33,12 @@ body {
 }
 
 .to-do-container {
+  max-width: 1280px;
   max-height: 310px;
   display: flex;
   flex-direction: row;
   justify-content: center;
+  margin: auto;
 }
 
 .task-form {
@@ -71,6 +73,7 @@ body {
 
 .form-submit {
   color: whitesmoke;
+  background-color: #368f49;
   font-weight: bold;
   margin-top: 15px;
   border: none;
@@ -154,4 +157,26 @@ body {
 }
 .list-item-btn:active {
   transform: scale(1.1);
+}
+
+@media screen and (max-width: 690px) {
+  .nav-bar {
+    margin-bottom: 20px;
+  }
+  .to-do-container {
+    padding: 0px 20px;
+    flex-direction: column;
+    justify-content: unset;
+  }
+
+  .task-form {
+    width: 280px;
+    margin: auto;
+    margin-bottom: 30px;
+  }
+
+  .tasks-details {
+    margin-left: 0px;
+    width: auto;
+  }
 }
