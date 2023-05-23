@@ -20,3 +20,138 @@ body {
   background-blend-mode: multiply;
   background-color: rgb(140, 139, 139);
 }
+
+.nav-bar {
+  font-size: 22px;
+  width: 100%;
+  height: 50px;
+  background-color: whitesmoke;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.to-do-container {
+  max-height: 310px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.task-form {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  background-color: whitesmoke;
+  border-radius: 4px;
+}
+
+.form-title {
+  font-size: 16px;
+  padding: 5px;
+  border: 1px solid lightgrey;
+  margin-bottom: 15px;
+  border-radius: 4px;
+}
+.form-title::placeholder {
+  color: gray;
+}
+
+.form-description {
+  border: 1px solid lightgrey;
+  border-radius: 4px;
+  min-width: 250px;
+  max-width: 250px;
+  min-height: 180px;
+  max-height: 300px;
+  padding: 5px;
+  font-size: 16px;
+}
+
+.form-submit {
+  color: whitesmoke;
+  font-weight: bold;
+  margin-top: 15px;
+  border: none;
+  border-radius: 4px;
+  padding: 10px;
+}
+
+.form-submit:hover {
+  cursor: pointer;
+  filter: brightness(0.8);
+}
+
+.form-submit:active {
+  transform: scale(0.9);
+}
+
+.tasks-details {
+  margin-left: 20px;
+  width: 55%;
+}
+
+.placeholders-container {
+  display: flex;
+  justify-content: space-between;
+  height: 40px;
+  font-size: 16px;
+  font-weight: bold;
+  color: whitesmoke;
+  border-bottom: 1px solid whitesmoke;
+  padding: 0px 10px;
+}
+.title-placeholder {
+  min-width: 120px;
+  max-width: 120px;
+}
+.description-placeholder {
+  width: 55%;
+}
+.delete-placeholder {
+  text-align: end;
+}
+
+.tasks-list {
+  max-height: 270px;
+  overflow-y: auto;
+}
+
+.list-item {
+  min-height: 50px;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  justify-content: space-between;
+  margin-top: 15px;
+  background-color: whitesmoke;
+}
+
+.list-item-title {
+  font-weight: bold;
+  min-width: 120px;
+  max-width: 120px;
+}
+
+.list-item-description {
+  width: 60%;
+}
+
+.list-item-btn {
+  color: white;
+  border: none;
+  background-color: rgb(205, 55, 85);
+  text-align: center;
+  border-radius: 4px;
+  width: 30px;
+  height: 30px;
+}
+
+.list-item-btn:hover {
+  cursor: pointer;
+  filter: brightness(1.4);
+}
+.list-item-btn:active {
+  transform: scale(1.1);
+}
