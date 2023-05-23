@@ -8,6 +8,38 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
+    <nav class="nav-bar">
+      <p>To-Do List Web App</p>
+    </nav>
+
+    <div class="to-do-container">
+      <form class="task-form">
+        <input class="form-title" placeholder="Title" required />
+        <input class="form-description" placeholder="Description" required />
+      </form>
+
+      <div class="tasks-details">
+        <div class="placeholders-container">
+          <p class="title-placeholder">Title</p>
+          <p class="description-placeholder">Description</p>
+          <p class="delete-placeholder">Delete</p>
+        </div>
+
+        <ul class="tasks-list">
+          <li class="list-item">
+            <p>Title</p>
+            <p>Description</p>
+            <button>X</button>
+          </li>
+          <li class="list-item">
+            <p class="list-item-title">Title</p>
+            <p class="list-item-description">Description</p>
+            <button class="list-item-btn">X</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+
     <script src="./script.js"></script>
   </body>
 </html>
